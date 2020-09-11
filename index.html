@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Min max Array</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            //Viết một chương trình JavaScript để tìm giá trị lớn nhất và nhỏ nhất trong mảng cho trước.
+            let numbers = ["10", "30", "80", "20", "50", "90", "70", "60"];
+            let max = numbers[0];
+            let min = numbers[0];
+            for (let i=0;i<numbers.length;i++){
+                if(max < numbers[i]){
+                    max = numbers[i];
+                }if(min > numbers[i]){
+                    min = numbers[i];
+                }
+            }
+            alert("max = " + max);
+            alert("min = " + min);
+        </script>
+    </body>
+</html>
